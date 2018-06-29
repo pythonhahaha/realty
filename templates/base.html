@@ -1,0 +1,24 @@
+{#coding=utf-8#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include 'top.html' %}
+</head>
+<body>
+
+    <div>
+        {% include 'left.html' %}
+    </div>
+
+    <div>
+            {% block main %}
+
+            {% endblock main %}
+
+    </div>
+
+    {% include 'down.html' %}
+</body>
+</html>
